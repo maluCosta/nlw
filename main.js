@@ -14,40 +14,23 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
-  //Verificar se a seção passou da linha
-  //quais dados vou precisar?
-
-  //o topo da seção
-  const sectionTop = services.offsetTop
-
-  // A altura da seção
+  // verificar se a seção passou da linha
+  // quais dados vou precisar?
+  const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-  // o topo chegou ou ultrapassou a linha alvo
-  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+  // verificar se a base está abaixo da linha alvo
 
-  //informações dos dados e da logica
-  console.log(
-    'O topo da seção chegou ou passou da linha?, sectionTopReachOrPassedTargetLine'
-  )
+  const sectionEndsAt = sectionTop + sectionHeight
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-  //verificar se a base está abaixo da linha alvo
-  //Quais dados vou precisar?
-
-  //a seção termina nele?
-  const sectionEnsdAt = sectionTop + sectionHeight
-
-  //o final da seção passou da linha alvo
-  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
-
-  console.log('O fundo da seção passou da linha?', sectionEndPassedTargetLine)
-
-  //limites da seção
+  // limites da seção
   const sectionBoundaries =
-    sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
-  const sectionId = section.getAttribut('id')
-  const menuElement = document.querySelector(`.menu a [href*=${sectionId}]`)
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
   menuElement.classList.remove('active')
   if (sectionBoundaries) {
@@ -85,12 +68,10 @@ ScrollReveal({
   duration: 700
 }).reveal(`
   #home,  
+  #home .stats, 
   #services,
+  #services header,
+  #services .card
   #about, 
-  `)
-
-function sayMyName(name) {
-  console.log(name)
-}
-
-sayMyName('Luiza')
+  #about header, 
+  #about .content`)

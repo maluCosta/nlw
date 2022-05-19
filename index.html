@@ -2,15 +2,15 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500&family=Roboto+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -71,7 +71,7 @@
         <div class="menu">
           <ul>
             <li>
-              <a class="active" onclick="closeMenu()" href="#home">Início</a>
+              <a onclick="closeMenu()" href="#home">Início</a>
             </li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
@@ -83,7 +83,7 @@
 
           <ul class="social-links">
             <li>
-              <a target="_blank" href="https://instagram.com/"
+              <a target="_blank" href="https://instagram.com/maykbrito"
                 ><svg
                   width="24"
                   height="24"
@@ -116,8 +116,8 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://facebook.com/"
-                ><svg
+              <a target="_blank" href="https://facebook.com/maykbrito">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -135,8 +135,8 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://YouTube.com/"
-                ><svg
+              <a target="_blank" href="https://youtube.com/maykbrito">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -162,6 +162,7 @@
             </li>
           </ul>
         </div>
+
         <button
           aria-expanded="false"
           aria-label="Abrir menu"
@@ -169,28 +170,28 @@
           class="open-menu"
         >
           <svg
-            width="22"
-            height="18"
-            viewBox="0 0 22 18"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M1 9H21"
+              d="M10 20H30"
               stroke="#00856F"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
-              d="M1 1H21"
+              d="M10 12H30"
               stroke="#00856F"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
-              d="M9 17L21 17"
+              d="M18 28L30 28"
               stroke="#00856F"
               stroke-width="2"
               stroke-linecap="round"
@@ -203,7 +204,6 @@
           aria-label="Fechar menu"
           onclick="closeMenu()"
           class="close-menu"
-          style="position: fixed"
         >
           <svg
             width="40"
@@ -239,27 +239,27 @@
             </p>
             <a class="button" href="#contact">
               <svg
-                width="21"
+                width="20"
                 height="20"
-                viewBox="0 0 21 20"
+                viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M14.7023 11.6667C14.5356 11.5833 13.4523 11.0833 13.2856 11C13.119 10.9167 12.9523 10.9167 12.7856 11.0833C12.619 11.25 12.2856 11.75 12.119 11.9167C12.0356 12.0833 11.869 12.0833 11.7023 12C11.119 11.75 10.5356 11.4167 10.0356 11C9.61898 10.5833 9.20231 10.0833 8.86898 9.58334C8.78565 9.41668 8.86898 9.25001 8.95231 9.16668C9.03565 9.08334 9.11898 8.91668 9.28565 8.83334C9.36898 8.75001 9.45231 8.58334 9.45231 8.50001C9.53565 8.41668 9.53565 8.25001 9.45231 8.16668C9.36898 8.08334 8.95231 7.08334 8.78565 6.66668C8.70231 6.08334 8.53565 6.08334 8.36898 6.08334C8.28565 6.08334 8.11898 6.08334 7.95231 6.08334C7.78565 6.08334 7.53565 6.25001 7.45231 6.33334C6.95231 6.83334 6.70231 7.41668 6.70231 8.08334C6.78565 8.83334 7.03565 9.58334 7.53565 10.25C8.45231 11.5833 9.61898 12.6667 11.0356 13.3333C11.4523 13.5 11.7856 13.6667 12.2023 13.75C12.619 13.9167 13.0356 13.9167 13.5356 13.8333C14.119 13.75 14.619 13.3333 14.9523 12.8333C15.119 12.5 15.119 12.1667 15.0356 11.8333C15.0356 11.8333 14.869 11.75 14.7023 11.6667ZM16.7856 4.08334C13.5356 0.833344 8.28565 0.833344 5.03564 4.08334C2.36898 6.75001 1.86898 10.8333 3.70231 14.0833L2.53564 18.3333L6.95231 17.1667C8.20231 17.8333 9.53565 18.1667 10.869 18.1667C15.4523 18.1667 19.119 14.5 19.119 9.91668C19.2023 7.75001 18.2856 5.66668 16.7856 4.08334ZM14.5356 15.75C13.4523 16.4167 12.2023 16.8333 10.869 16.8333C9.61898 16.8333 8.45231 16.5 7.36898 15.9167L7.11898 15.75L4.53564 16.4167L5.20231 13.9167L5.03564 13.6667C3.03564 10.3333 4.03564 6.16668 7.28565 4.08334C10.5356 2.00001 14.7023 3.08334 16.7023 6.25001C18.7023 9.50001 17.7856 13.75 14.5356 15.75Z"
+                  d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
                   fill="white"
                 />
               </svg>
 
-              Agende sua consuta
+              Agende sua consulta
             </a>
           </div>
         </div>
 
         <div class="col-b">
           <img
-            src="assets/mulher-negra-com-moletom-verde-com-as-duas-maos-no-peito.png"
-            alt="Mulher negra vestindo moletom verde com as duas mãos no peito  e sorrindo"
+            src="./assets/mulher-negra-com-moletom-verde-com-as-duas-maos-no-peito.png"
+            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
           />
         </div>
 
@@ -271,7 +271,7 @@
 
           <div class="stat">
             <h3>+15</h3>
-            <p>Especialistas disponiveis</p>
+            <p>Especialistas disponíveis</p>
           </div>
 
           <div class="stat">
@@ -449,7 +449,7 @@
       <div class="wrapper">
         <div class="col-a">
           <header>
-            <h4>SOBRE NÓS</h4>
+            <h4>Sobre nós</h4>
             <h2>Entenda quem somos e por que existimos</h2>
           </header>
 
@@ -469,7 +469,7 @@
 
         <div class="col-b">
           <img
-            src="assets/doutor-feliz-segurando-prancheta-com-pacientes.png"
+            src="./assets/doutor-feliz-segurando-prancheta-com-pacientes.png"
             alt="Doutor feliz segurando prancheta com pacientes"
           />
         </div>
@@ -487,27 +487,28 @@
             <ul>
               <li>
                 <svg
-                  width="31"
-                  height="27"
-                  viewBox="0 0 31 27"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M26.5322 11.25C26.5322 19.125 15.1613 25.875 15.1613 25.875C15.1613 25.875 3.79028 19.125 3.79028 11.25C3.79028 8.56468 4.98829 5.98935 7.12076 4.09054C9.25323 2.19174 12.1455 1.125 15.1613 1.125C18.177 1.125 21.0693 2.19174 23.2017 4.09054C25.3342 5.98935 26.5322 8.56468 26.5322 11.25Z"
+                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
                     stroke="#00856F"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
-                    d="M15.1612 14.625C17.2545 14.625 18.9515 13.114 18.9515 11.25C18.9515 9.38604 17.2545 7.875 15.1612 7.875C13.0678 7.875 11.3708 9.38604 11.3708 11.25C11.3708 13.114 13.0678 14.625 15.1612 14.625Z"
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
                     stroke="#00856F"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
+
                 R. Amauri Souza, 346
               </li>
               <li>
@@ -533,13 +534,14 @@
                     stroke-linejoin="round"
                   />
                 </svg>
+
                 contato@doctorcare.com
               </li>
             </ul>
 
             <a
               class="button"
-              href="https://wa.me/5584987654321"
+              href="https://wa.me/5511987654321"
               target="_blank"
             >
               <svg
@@ -554,14 +556,15 @@
                   fill="white"
                 />
               </svg>
-              Agende sua consulta</a
-            >
+
+              Agende sua consulta
+            </a>
           </div>
         </div>
 
         <div class="col-b">
           <img
-            src="assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+            src="./assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
             alt="Homem negro com moletom bege mexendo no celular e sorrindo"
           />
         </div>
@@ -623,7 +626,7 @@
           </a>
 
           <p>
-            ©2021 DoctorCare. <br />
+            ©2022 DoctorCare. <br />
             Todos os direitos reservados.
           </p>
         </div>
@@ -631,7 +634,7 @@
         <div class="col-b">
           <ul class="social-links">
             <li>
-              <a target="_blank" href="https://instagram.com/"
+              <a target="_blank" href="https://instagram.com/maykbrito"
                 ><svg
                   width="24"
                   height="24"
@@ -664,8 +667,8 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://facebook.com/"
-                ><svg
+              <a target="_blank" href="https://facebook.com/maykbrito">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -683,8 +686,8 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://YouTube.com/"
-                ><svg
+              <a target="_blank" href="https://youtube.com/maykbrito">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -739,8 +742,8 @@
       </svg>
     </a>
 
-    <!--ScrollReaveal Lib-->
+    <!-- ScrollReaveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="/JS/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
